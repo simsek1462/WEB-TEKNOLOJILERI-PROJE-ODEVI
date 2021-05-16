@@ -3,7 +3,7 @@ body{
 }
 .bolum1{
 	height: 100vh;
-	background-color: rgba(0,0,0);
+	background:black;
 	background-size: cover;
 	background-position:50% 0;
 	position: relative;
@@ -67,6 +67,14 @@ body{
 .bolum2 {
     margin: 50px auto;
 }
+.bolum2 h2{
+	font-size: 35px;
+	font-weight: 400;
+}
+.bolum2 p{
+	color: #000;
+	font-size: 16px;
+}
 .bolum2 .resim{
 	
 	width: 100%;
@@ -92,7 +100,7 @@ body{
 .bolum3 img{
 	width: auto;
 	height: auto;
-	border-radius:10%
+	
 
 }
 /* bolum3 son */
@@ -114,7 +122,7 @@ footer ul li a{
 	transition: 0.2s;
 }
 footer ul li a:hover{
-	color: rgb(72, 72, 72);
+	color: rgb(209, 209, 209);
 	text-decoration: none;
 	
 }
