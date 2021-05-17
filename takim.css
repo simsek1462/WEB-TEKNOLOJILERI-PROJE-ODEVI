@@ -1,0 +1,177 @@
+body{
+	font-family: 'Poppins',sans-serif;
+}
+.bolum1{
+	height: 100vh;
+	background-image: url("images/takım\ bg.jpg");
+	background-size: cover;
+	background-position:50% 0%;
+	position: relative;
+}
+.menu{
+	position: absolute;
+	top:30px;
+	width: 85%;
+	z-index: 999;
+}
+@media only screen and (max-width:768px){
+	.menu{
+		background: rgba(0, 0, 0, 0.8);
+		top: 0;
+		left: 0;
+		width: 100%;
+		position: fixed;
+	}
+}
+.bolum1 .navbar-brand{
+	font-weight: 600;
+}
+
+.bolum1 .navbar li{
+	margin-left:15px;
+}
+.bolum1 .navbar li a{
+	font-size: 15px;
+	color: rgb(255, 255, 255) !important;
+	letter-spacing: 1px;
+	transition: 0.2s;
+    font-weight: 400;
+}
+.bolum1 .navbar .navbar-nav .active>a,
+.bolum1 .navbar .navbar-nav a:hover{
+	color: #1df736 !important;
+}
+
+@media only screen and(max-width:768px){
+    .bolum1{
+        height:850px;
+    }
+}
+@media only screen and (max-width:500px){
+    .bolum1{
+        background-image: url("images/mobil\ bg.jpg");
+    }
+}
+/* BOLUM1 SON */
+/* BOLUM2 BASLANGIC */
+.bolum2 {
+    margin: 100px auto;
+    padding: 0 !important;
+
+
+}
+.bolum2 h1{
+    letter-spacing: 1;
+    color: white;
+    background-color: darkgreen;
+     display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family:cursive
+
+}
+.bolum2 .container{
+    margin: 50px auto;
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    padding:10px;
+    height: 100%;
+}
+.bolum2 h2{
+    color: rgb(49, 46, 46);
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family:cursive;
+    text-align: center;
+}
+.bolum2 img{
+    width: 100%;
+    height: 310px;
+}
+.bolum2 strong{
+    color: rgb(25, 62, 25);
+}
+/* bolum2 son */
+/* bolum3 baslangıc */
+.bolum3{
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(16, 110, 16);
+}
+.bolum3 h2{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-family:cursive;
+    text-align: center;
+}
+.bolum3 img{
+    width: 100%;
+    height: 200px;
+}
+.bolum3 .row{
+    margin:30px;
+    background-color: white;
+    padding: 10px;
+    border: solid 5px rgb(25, 59, 5);
+}
+.bolum3 h4{
+    margin-top: 10px;
+}
+/* bolum3 son */
+/* bolum4 baslangıc */
+.bolum4{
+    margin: 50px auto;
+}
+.bolum4 h2{
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-family:cursive;
+    text-align: center;
+}
+.bolum4 img{
+    width: 100%;
+    height: 270px;
+}
+.bolum4 .row{
+    margin-top: 30px;
+}
+/* bolum4 son */
+footer{
+	margin-top: 100px;
+    background-color: #000;
+    padding: 80px 0;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	color: gray;
+}
+footer ul li a{
+	color: gray;
+	text-decoration: none;
+	transition: 0.2s;
+}
+footer ul li a:hover{
+	color: rgb(209, 209, 209);
+	text-decoration: none;
+	
+}
+footer ul li a i{
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+footer .sosyalmedya li a{
+	width: 45px;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #171717;
+}
