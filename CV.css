@@ -1,0 +1,95 @@
+body{
+	font-family: 'Poppins',sans-serif;
+}
+.bolum1{
+	height: 100vh;
+	background: url("images/cv\ bg.jpg");
+	background-size: cover;
+	background-position:50% 0;
+	position: relative;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.6);
+	position: absolute;
+	top:0;
+	left: 0;
+
+}
+.menu{
+	position: absolute;
+	top:30px;
+	width: 85%;
+	z-index: 999;
+}
+@media only screen and (max-width:768px){
+	.menu{
+		background: rgba(0,0,0,0.8);
+		top: 0;
+		left: 0;
+		width: 100%;
+		position: fixed;
+	}
+}
+.bolum1 .navbar-brand{
+	font-weight: 600;
+}
+.bolum1 span{
+    color:turquoise;
+    font-size: 25px;
+}
+.bolum1 .navbar li{
+	margin-left:15px;
+}
+.bolum1 .navbar li a{
+	font-size: 20px;
+	color: white !important;
+	font-weight: 400;
+	letter-spacing: 1px;
+	transition: 0.2s;
+}
+.bolum1 .navbar .navbar-nav .active>a,
+.bolum1 .navbar .navbar-nav a:hover{
+    color:turquoise !important;
+}
+.bolum1 .container .row{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom:30px;
+}
+.bolum1 p{
+    color: teal;
+    font-size: 20px;
+}
+@media only screen and(max-width:768px){
+    .bolum1{
+        height:850px;
+    }
+}
+/* bolum1 son */
+/* bolum2 baslangıc */
+.bolum2{
+    margin: 50px auto;
+    background: rgb(17, 16, 16);
+    padding-bottom: 100px;
+}
+h3{
+    color:turquoise;
+    margin-top: 50px;
+}
+.bolum2 p{
+    color: white;
+}
+.bolum2 li::marker{
+    color: teal;
+}
