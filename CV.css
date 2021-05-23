@@ -93,3 +93,38 @@ h3{
 .bolum2 li::marker{
     color: teal;
 }
+/* bolum2 son */
+footer{
+	margin-top: 100px;
+    background-color: #000;
+    padding: 80px 0;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	color: gray;
+}
+footer ul li a{
+	color: gray;
+	text-decoration: none;
+	transition: 0.2s;
+}
+footer ul li a:hover{
+	color: rgb(209, 209, 209);
+	text-decoration: none;
+	
+}
+footer ul li a i{
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+footer .sosyalmedya li a{
+	width: 45px;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #171717;
+}
