@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title>İletişim</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="d-flex justify-content-center mb-3 text-dark  " style="letter-spacing: 2px;" >İLETİŞİM</h1>
+        <form action="iletisim.php" method="POST" class="border  p-5">
+            <div class="form-group">
+                <label for="ad">Lütfen adınızı ve soyadınızı giriniz.</label>
+                <input type="text" name="ad" class="form-control" id="ad" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">Lütfen e-posta adresinizi giriniz.</label>
+                <input type="email" name="mail" class="form-control" id="mail" required>
+                <small class="form-text text-muted">Eposta adresiniz gizli tutulacaktır</small>
+            </div>
+            <div class="form-group">
+                <label for="">Cinsiyetiniz</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="erkek" required>
+                    <label class="form-check-label" for="erkek">
+                        Erkek
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="kadin" required>
+                    <label class="form-check-label" for="kadin">
+                        Kadın
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Şehrinizi seçiniz.</label>
+                <select name="il" class="custom-select" required>
+                    <option value="bursa" >Bursa</option>
+                    <option value="sakarya">Sakarya</option>
+                    <option value="istanbul">İstanbul</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Sitedeki beğendiğiniz sayfalar</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="site1" id="hakkimda" value="hakkimda">
+                    <label class="form-check-label" for="hakkimda">Hakkımda</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="site2" id="sehrim" value="sehrim">
+                    <label class="form-check-label" for="sehrim">Şehrim</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="site3" id="takim" value="takim">
+                    <label class="form-check-label" for="takimim">Takımım</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="site4" id="hobiler" value="Hobilerim">
+                    <label class="form-check-label" for="hobiler">Hobilerim</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="foto">Sitede yer almasını istediğiniz fotoğraf seçiniz.</label>
+                <input type="file" name="foto" class="form-control-file" id="foto">
+            </div>
+            <div class="form-group">
+                <label for="gorus">Görüşlerinizi bildirin.</label>
+                <textarea class="form-control" name="fikir" id="gorus" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+            <input class="btn btn-primary" type="reset" value="Reset">
+            <a href="index.html" class="btn btn-primary">Anasayfa</a>
+        </form>
+    </div>
+</body>
+
+</html>

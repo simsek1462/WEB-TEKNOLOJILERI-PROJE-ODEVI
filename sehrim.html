@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="sehrim.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <title>Document</title>
+    <title>Şehrim</title>
 </head>
 
 <body>
@@ -38,19 +38,31 @@
                             <a class="nav-link" href="takim.html">Takımım</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Hobiler</a>
+                            <a class="nav-link" href="hobiler.html">Hobiler</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="CV.html">CV</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">İletişim</a>
+                            <a class="nav-link" href="iletisim.html">İletişim</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div class="row" style="height: 300px;">
+            <!-- <div class="row" style="height: 300px;">
                 <img src="images/logo2.jpg" id="logo" alt="">
+            </div> -->
+            <div class="app">
+                <div class="header">
+                    <h1>Hava Durumu</h1>
+                    <input type="text" id="searchBar" placeholder="İlçenizi giriniz..">
+                </div>
+                <div class="content">
+                    <div class="city">Bursa</div>
+                    <div class="temp"></div>
+                    <div class="desc"></div>
+                    <div class="minmax"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -458,7 +470,7 @@
         </div>
         <div class="row border border-dark p-3 mt-4">
             <div class="col-md-4">
-                <img src="images/Tofas-min_1138x640.jpg" alt="">
+                <img src="images/mobilya sanayi.jpg" alt="">
             </div>
             <div class="col-md-8">
                 <h3>Mobilya Sanayi</h3>
@@ -525,6 +537,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script src="api.js"></script>
     <script>
         $(document).ready(function () {
             $('.carousel').carousel({
